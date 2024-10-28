@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('hitung',[HitungController::class,'hitungduabilangan']);
+Route::get('mahasiswa',[HitungController::class,'mahasiswa']);
