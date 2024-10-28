@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Mahasiswa;
+use App\Models\SufandiAliansyah202333;
 
 class HitungController extends Controller
 {
@@ -20,7 +20,7 @@ class HitungController extends Controller
 
     public function mahasiswa(){
 
-        $hasil = Mahasiswa::all();
+        $hasil = SufandiAliansyah202333::all();
 
         return view('view_mahasiswa',[
             'hasil' => $hasil
