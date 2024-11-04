@@ -18,8 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('hitung',[HitungController::class,'hitungduabilangan']);
-// Route::get('mahasiswa',[HitungController::class,'mahasiswa']);
+Route::get('hitung',[HitungController::class,'hitungduabilangan']);
+Route::get('mahasiswatugas3',[HitungController::class,'mahasiswa']);
 
 Route::get('/mahasiswa',[App\Http\Controllers\MahasiswaController::class,'view']);
 Route::get('/mahasiswa/create',[App\Http\Controllers\MahasiswaController::class,'create']);
