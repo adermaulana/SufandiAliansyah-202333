@@ -24,7 +24,7 @@ class MahasiswaController extends Controller
 
         $request->validate([
             'nim' => 'required|numeric',
-            'nama' => 'required|min:4',
+            'nama' => 'required|min:4|regex:/^[a-zA-Z\s]+$/',
             ]);
 
     $mahasiswa=new Mahasiswa();
