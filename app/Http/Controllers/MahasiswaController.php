@@ -20,6 +20,13 @@ class MahasiswaController extends Controller
 
     public function store(Request $request)
     {
+
+
+        $request->validate([
+            'nim' => 'required|numeric',
+            'nama' => 'required|min:4',
+            ]);
+
     $mahasiswa=new Mahasiswa();
     $mahasiswa->nim=$request->nim;
     $mahasiswa->nama=$request->nama;
